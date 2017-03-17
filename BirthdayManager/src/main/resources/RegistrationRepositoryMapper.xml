@@ -1,0 +1,12 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.birthdaymanager.repository.RegistrationRepository">
+
+    <insert id="saveValidUser" parameterType="com.birthdaymanager.dto.User">
+        /* RegistrationRepository.saveValidUser*/
+
+        insert into user(id,FirstName,LastName,DateOfBirth,Cell,GenderId,LocaleId,CreatedDateTime,UpdatedDateTime)
+        values(#{id},#{firstName},#{lastName},NOW() ,#{cell},#{genderId},1,NOW(),NOW());
+
+    </insert>
+    </mapper>
