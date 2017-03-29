@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by umesh.soni on 3/14/2017.
  */
 @RestController
-public class userRegistrationController {
+public class UserRegistrationController {
 
     private RegistrationFacade registrationFacade;
 
     @Autowired
-    public userRegistrationController(RegistrationFacade registrationFacade){
+    public UserRegistrationController(RegistrationFacade registrationFacade){
         this.registrationFacade = registrationFacade;
     }
 
